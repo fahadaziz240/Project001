@@ -42,5 +42,5 @@ jobs:
         run: npm install --global surge
         
       - name: run surge
-        run: surge ./bulid fahadaziz240-project001.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./bulid --token ${{secrets.SURGE_TOKEN}}
  
