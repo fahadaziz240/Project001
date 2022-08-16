@@ -30,6 +30,8 @@ jobs:
         uses: actions/setup-node@v2-beta
         with: 
             node-version: 12
+      - name: cache clean
+        run: yarn cache clean.
                
     
       - uses: borales/actions-yarn@v3.0.0
