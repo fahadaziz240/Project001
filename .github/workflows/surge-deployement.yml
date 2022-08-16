@@ -28,7 +28,8 @@ jobs:
         node-version: 16 
     
     - name: react build
-      run: npm create-react-app 001
+      with:
+       cmd: yarn build
       
     - name: Install Surge
       run: npm install --global surge
