@@ -32,6 +32,8 @@ jobs:
             node-version: 12
       - name: cache clean
         run: yarn cache clean.
+        
+        
                
     
       - uses: borales/actions-yarn@v3.0.0
@@ -39,7 +41,7 @@ jobs:
           cmd: install # will run `yarn install` command
           
       - name: build React App
-        run: yarn build
+        run: yarn run build
         
       - name: Install Surge
         run: npm install --global surge
