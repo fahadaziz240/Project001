@@ -28,7 +28,7 @@ jobs:
         node-version: 16 
     
     - name: react build
-      run: create-react-app 001
+      run: npm create-react-app 001
       
     - name: Install Surge
       run: npm install --global surge
